@@ -1,0 +1,66 @@
+﻿@model BeyazEsyaProje.Models.CamasirMakinesi
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CamasirMakinesi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Kategori.KategoriAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kategori.KategoriAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Renk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Renk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boyutlar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boyutlar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProgramSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProgramSayisi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

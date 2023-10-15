@@ -1,0 +1,72 @@
+﻿@model BeyazEsyaProje.Models.CamasirMakinesi
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CamasirMakinesi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Kategori.KategoriAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kategori.KategoriAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Renk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Renk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boyutlar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boyutlar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProgramSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProgramSayisi)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
